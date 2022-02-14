@@ -24,3 +24,14 @@ __all__ = [
     'build_dataset', 'replace_ImageToTensor', 'get_loading_pipeline',
     'NumClassCheckHook', 'CocoPanopticDataset', 'MultiImageMixDataset'
 ]
+
+# ...
+from .wider_face import WIDERFaceDataset
+from .xml_style import XMLDataset
+### ADDING YOUR DATASET
+from .my_dataset import MyDataset
+__all__ = [
+    'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
+    'CityscapesDataset', 'GroupSampler', 'DistributedGroupSampler',
+    'build_dataloader', 'ConcatDataset', 'RepeatDataset', 'WIDERFaceDataset',
+    'DATASETS', 'build_dataset','MyDataset'] # Also Add in List
